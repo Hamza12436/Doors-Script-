@@ -1,5 +1,5 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({IntroText = "Noax Hub",Name = "Doors Script By Noax", HidePremium = false, SaveConfig = true, ConfigFolder = "DoorsSex"})
+local Window = OrionLib:MakeWindow({IntroText = "Noax Hub",Name = "Doors Script By Noax", HidePremium = false, IntroEnabled = false, SaveConfig = true, ConfigFolder = "DoorsSex"})
 if game.PlaceId == 6516141723 then
     OrionLib:MakeNotification({
         Name = "Error",
@@ -169,7 +169,7 @@ CharTab:AddToggle({
 })
  
 GameTab:AddToggle({
-	Name = "No seek Arms/Obstructions",
+	Name = "No Seek Arms/Obstructions",
 	Default = false,
     Flag = "NoSeek",
     Save = true
