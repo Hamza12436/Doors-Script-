@@ -169,7 +169,7 @@ CharTab:AddToggle({
 })
  
 GameTab:AddToggle({
-	Name = "No seek arms/obstructions",
+	Name = "No seek Arms/Obstructions",
 	Default = false,
     Flag = "NoSeek",
     Save = true
@@ -182,7 +182,7 @@ GameTab:AddToggle({
     Save = true
 })
 GameTab:AddButton({
-	Name = "Skip level",
+	Name = "Skip Level",
 	Callback = function()
         pcall(function()
             local HasKey = false
@@ -211,7 +211,7 @@ GameTab:AddButton({
 })
  
 GameTab:AddToggle({
-	Name = "Auto skip level",
+	Name = "Auto Skip Level",
 	Default = false,
     Save = false,
     Flag = "AutoSkip"
@@ -251,7 +251,7 @@ end)
 coroutine.resume(AutoSkipCoro)
  
 GameTab:AddButton({
-	Name = "No jumpscares",
+	Name = "No Jumpscares",
 	Callback = function()
         pcall(function()
             game:GetService("ReplicatedStorage").Bricks.Jumpscare:Destroy()
@@ -272,32 +272,32 @@ GameTab:AddToggle({
 })
  
 GameTab:AddToggle({
-	Name = "Always win heartbeat",
+	Name = "Always Win Heartbeat",
 	Default = false,
     Flag = "HeartbeatWin",
     Save = true
 })
  
 GameTab:AddToggle({
-	Name = "Predict chases",
+	Name = "Predict Chases",
 	Default = false,
     Flag = "PredictToggle" ,
     Save = true
 })
 GameTab:AddToggle({
-	Name = "Notify when mob spawns",
+	Name = "Notify When Mob Spawns",
 	Default = false,
     Flag = "MobToggle" ,
     Save = true
 })
 GameTab:AddButton({
-	Name = "Complete breaker box minigame",
+	Name = "Complete Breaker Box Minigame",
 	Callback = function()
         game:GetService("ReplicatedStorage").Bricks.EBF:FireServer()
   	end    
 })
 GameTab:AddButton({
-	Name = "Skip level 50",
+	Name = "Skip Level 50",
 	Callback = function()
         local CurrentDoor = workspace.CurrentRooms[tostring(LatestRoom+1)]:WaitForChild("Door")
         game.Players.LocalPlayer.Character:PivotTo(CF(CurrentDoor.Door.Position))
